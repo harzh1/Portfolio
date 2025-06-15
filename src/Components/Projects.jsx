@@ -4,8 +4,16 @@ import { Briefcase, Code, Github } from "lucide-react";
 import Glass from "./Glass";
 import SubtleGlassButton from "./SubtleGlassButton";
 import Section from "./Section";
+import { projects as projectData } from "../data/projects";
 
-const ProjectCard = ({ title, description, imageUrl, tags }) => (
+const ProjectCard = ({
+  title,
+  description,
+  imageUrl,
+  tags,
+  liveURL,
+  githubURL,
+}) => (
   <Glass
     isInteractive={true}
     className="overflow-hidden h-full flex flex-col p-0"
@@ -36,7 +44,9 @@ const ProjectCard = ({ title, description, imageUrl, tags }) => (
       <div className="flex flex-wrap justify-between items-center mt-auto gap-3">
         <SubtleGlassButton className="flex-1 min-w-[140px]">
           <a
-            href="#"
+            href={liveURL || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full text-center text-blue-200 hover:text-blue-100 font-semibold transition duration-300 flex items-center justify-center gap-2 whitespace-nowrap overflow-hidden"
           >
             <Code size={18} /> View Live
@@ -44,7 +54,9 @@ const ProjectCard = ({ title, description, imageUrl, tags }) => (
         </SubtleGlassButton>
         <SubtleGlassButton className="flex-1 min-w-[140px]">
           <a
-            href="#"
+            href={githubURL || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full text-center text-blue-200 hover:text-purple-100 font-semibold transition duration-300 flex items-center justify-center gap-2 whitespace-nowrap overflow-hidden"
           >
             <Github size={18} /> View Code
@@ -56,30 +68,6 @@ const ProjectCard = ({ title, description, imageUrl, tags }) => (
 );
 
 const Projects = () => {
-  const projectData = [
-    {
-      title: "CodeScout",
-      description:
-        "A full-stack platform to track user ratings and manage 50+ coding contests across 4 platforms, serving 500+ monthly users. Implemented JWT-based authentication for 1000+ users.",
-      imageUrl: "https://placehold.co/600x400/3b82f6/eff6ff?text=CodeScout",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "Vidora",
-      description:
-        "An e-commerce app with role-based authentication, 50+ products, and 100+ test transactions. Integrated Razorpay for secure test purchases and designed scalable REST APIs.",
-      imageUrl: "https://placehold.co/600x400/2563eb/dbeafe?text=Vidora",
-      tags: ["React", "Node.js", "MongoDB", "REST API"],
-    },
-    {
-      title: "CV-Application",
-      description:
-        "A React-based CV builder with modular sections, live preview, and drag-and-drop customization. Implemented PDF export functionality using html2pdf.js.",
-      imageUrl: "https://placehold.co/600x400/1d4ed8/bfdbfe?text=CV-Builder",
-      tags: ["React", "CSS", "HTML", "html2pdf.js"],
-    },
-  ];
-
   return (
     <Section
       id="projects"

@@ -5,24 +5,9 @@ import FadeIn from "./Fader";
 import Glass from "./Glass";
 import Section from "./Section";
 import profilePic from "../assets/me.jpg"; // Adjust the path as necessary
+import { skills } from "../data/skills";
 
 const About = () => {
-  const skills = [
-    "C",
-    "C++",
-    "JavaScript",
-    "SQL",
-    "Python",
-    "Java",
-    "MongoDB",
-    "Express.js",
-    "React.js",
-    "Node.js",
-    "JWT",
-    "REST API",
-    "Data Structures",
-    "Computer Networks",
-  ];
   return (
     <Section
       id="about"
