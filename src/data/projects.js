@@ -9,7 +9,7 @@ export const projects = [
     liveURL: "https://codescout-frontend-by79.onrender.com/",
   },
   {
-    title: "CodeScout v@",
+    title: "CodeScout v2",
     description:
       "Built a new beautiful UI for CodeScout with a focus on user experience and performance. The new design enhances navigation and accessibility, making it easier for users to track their coding contests and ratings. The core features remain intact, ensuring that users can still manage their contests and problems efficiently.",
     imageUrl: "https://placehold.co/600x400/3b82f6/eff6ff?text=CodeScout",
