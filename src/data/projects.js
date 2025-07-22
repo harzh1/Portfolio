@@ -9,6 +9,15 @@ export const projects = [
     liveURL: "https://codescout-frontend-by79.onrender.com/",
   },
   {
+    title: "CodeScout v@",
+    description:
+      "Built a new beautiful UI for CodeScout with a focus on user experience and performance. The new design enhances navigation and accessibility, making it easier for users to track their coding contests and ratings. The core features remain intact, ensuring that users can still manage their contests and problems efficiently.",
+    imageUrl: "https://placehold.co/600x400/3b82f6/eff6ff?text=CodeScout",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    githubURL: "https://github.com/harzh1/codeScout-v2",
+    liveURL: "https://codescout-v2.onrender.com/",
+  },
+  {
     title: "Vidora",
     description:
       "Built an e-commerce app with role-based authentication, 50+ products, and 100+ test transactions. Designed scalable REST APIs for cart, checkout, profile, and orders. Integrated Razorpay sandbox gateway for secure transactions.",
